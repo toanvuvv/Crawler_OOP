@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test3.MonarchController">
+    <children>
+        <TableView fx:id="monarchTable" layoutY="103.0" prefHeight="618.0" prefWidth="1280.0">
+            <columns>
+                <TableColumn fx:id="sinhColumn" prefWidth="76.6666589975357" text="Sinh" />
+                <TableColumn fx:id="mieuHieuColumn" prefWidth="111.33333587646484" text="Miếu hiệu" />
+                <TableColumn fx:id="triViBatDauColumn" prefWidth="83.33341979980469" text="Trị vì bắt đầu" />
+                <TableColumn fx:id="trieudaiColumn" prefWidth="67.333251953125" text="Triều đại" />
+                <TableColumn fx:id="noiMatColumn" prefWidth="126.0" text="Nơi mất" />
+                <TableColumn fx:id="triViKetThucColumn" prefWidth="82.66671752929688" text="Trị vì kết thúc" />
+                <TableColumn fx:id="nienHieuColumn" prefWidth="61.33331298828125" text="Niên hiệu" />
+                <TableColumn fx:id="noiSinhColumn" prefWidth="52.00006103515625" text="Nơi sinh" />
+                <TableColumn fx:id="tenHuyColumn" prefWidth="57.33331298828125" text="Tên húy" />
+                <TableColumn fx:id="tenColumn" prefWidth="120.0" text="tên" />
+                <TableColumn fx:id="matColumn" minWidth="6.66668701171875" prefWidth="30.0" text="Mất" />
+                <TableColumn fx:id="keNhiemColumn" prefWidth="130.0" text="Kế nhiệm" />
+                <TableColumn fx:id="theThuColumn" prefWidth="150.0" text="Thế thứ" />
+                <TableColumn fx:id="tienNhiemColumn" prefWidth="144.0" text="Tiền nhiệm" />
+            </columns>
+        </TableView>
+        <Label layoutX="543.0" layoutY="15.0" text="MONARCH" textFill="#e45e5e">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="38.0" />
+            </font>
+        </Label>
+        <Button layoutX="426.0" layoutY="58.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="31.0" prefWidth="91.0" text="BACK" />
+        <TextField fx:id="filterFieldMonarch" layoutX="34.0" layoutY="58.0" prefHeight="31.0" prefWidth="360.0" promptText="Search..." />
+    </children>
+</AnchorPane>
