@@ -7,9 +7,9 @@ import com.hust.process.Process;
 
 public class Main {
     public static void main(String[] args) {
-        //new CrawlData();
+        new CrawlData();
         History history = new Process().getHistory();
-        history.write();
- //      new App(history);
+        // history.write();
+
     }
 }

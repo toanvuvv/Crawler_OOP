@@ -76,12 +76,12 @@ public class History {
             JSONObject jsObj = site.toJSON();
             jsonSites.put(jsObj);
         }
-        toFile(jsonDynasties, "E:\\Game\\history-master\\history-master\\src\\main\\resources\\output\\dynasty.json");
-        toFile(jsonEvents, "E:\\Game\\history-master\\history-master\\src\\main\\resources\\output\\event.json");
-        toFile(jsonMonarch, "E:\\Game\\history-master\\history-master\\src\\main\\resources\\output\\monarch.json");
-        toFile(jsonFigure, "E:\\Game\\history-master\\history-master\\src\\main\\resources\\output\\figure.json");
-        toFile(jsonFestivals, "E:\\Game\\history-master\\history-master\\src\\main\\resources\\output\\festival.json");
-        toFile(jsonSites, "E:\\Game\\history-master\\history-master\\src\\main\\resources\\output\\site.json");
+        toFile(jsonDynasties, "Crawler/src/main/resources/output/dynasty.json");
+        toFile(jsonEvents, "Crawler/src/main/resources/output/event.json");
+        toFile(jsonMonarch, "Crawler/src/main/resources/output/monarch.json");
+        toFile(jsonFigure, "Crawler/src/main/resources/output/figure.json");
+        toFile(jsonFestivals, "Crawler/src/main/resources/output/festival.json");
+        toFile(jsonSites, "Crawler/src/main/resources/output/site.json");
     }
 
     private static void toFile(JSONArray jsA, String filePath) {

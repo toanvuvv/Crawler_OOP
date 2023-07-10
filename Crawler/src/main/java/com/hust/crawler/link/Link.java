@@ -1,7 +1,7 @@
 package com.hust.crawler.link;
 
 public interface Link {
-    final String baseFilePath = "E:\\Game\\history-master\\history-master\\src\\main\\resources\\";
+    final String baseFilePath = "Crawler/src/main/resources/data/";
     void writeToFile(String fileName);
     void crawl(String url);
 }
