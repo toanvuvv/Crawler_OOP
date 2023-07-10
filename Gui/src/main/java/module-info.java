@@ -6,8 +6,8 @@ module com.example.test {
     requires com.fasterxml.jackson.databind;
 
 
-    opens com.example.App to javafx.fxml;
-    exports com.example.App;
+    opens com.example.test3 to javafx.fxml;
+    exports com.example.test3;
     exports com.example.controll;
     opens com.example.controll to javafx.fxml;
 }

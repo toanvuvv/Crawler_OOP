@@ -1,6 +1,5 @@
-package com.example.App;
+package com.example.test3;
 
-import com.example.controll.FigureData;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.example.controll.FestivalData;
 import javafx.collections.FXCollections;

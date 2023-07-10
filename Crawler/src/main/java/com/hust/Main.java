@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         new CrawlData();
         History history = new Process().getHistory();
-        // history.write();
+        history.write();
 
     }
 }
