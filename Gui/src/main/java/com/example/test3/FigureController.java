@@ -65,7 +65,7 @@ public class FigureController implements Initializable {
         // Load data from JSON file
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            File file = new File("Crawler/src/main/resources/output/figure.json");
+            File file = new File("Gui/src/main/data/figure.json");
             FigureData[] figureDataArray = objectMapper.readValue(file, FigureData[].class);
             List<FigureData> figureDataList = Arrays.asList(figureDataArray);
             this.figureDataList = FXCollections.observableArrayList(figureDataList);

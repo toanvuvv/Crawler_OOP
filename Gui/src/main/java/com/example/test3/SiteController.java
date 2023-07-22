@@ -60,7 +60,7 @@ public class SiteController implements Initializable {
         // Load data from JSON file
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            File file = new File("Crawler/src/main/resources/output/site.json");
+            File file = new File("Gui/src/main/data/site.json");
             SiteData[] siteDataArray = objectMapper.readValue(file, SiteData[].class);
             List<SiteData> siteDataList = Arrays.asList(siteDataArray);
             this.siteDataList = FXCollections.observableArrayList(siteDataList);

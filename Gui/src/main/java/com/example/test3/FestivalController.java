@@ -62,7 +62,7 @@ public class FestivalController implements Initializable {
         // Load data from JSON file
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            File file = new File("Crawler/src/main/resources/output/festival.json");
+            File file = new File("Gui/src/main/data/festival.json");
             FestivalData[] festivalDataArray = objectMapper.readValue(file, FestivalData[].class);
             List<FestivalData> festivalDataList = Arrays.asList(festivalDataArray);
             this.festivalDataList = FXCollections.observableArrayList(festivalDataList);

@@ -78,7 +78,7 @@ public class MonarchController implements Initializable {
         // Load data from JSON file
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            File file = new File("Crawler/src/main/resources/output/monarch.json");
+            File file = new File("Gui/src/main/data/monarch.json");
             MonarchData[] monarchDataArray = objectMapper.readValue(file, MonarchData[].class);
             List<MonarchData> monarchDataList = Arrays.asList(monarchDataArray);
             this.monarchDataList = FXCollections.observableArrayList(monarchDataList);

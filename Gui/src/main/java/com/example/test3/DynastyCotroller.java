@@ -73,7 +73,7 @@ public class DynastyCotroller implements Initializable {
         // Load data from JSON file
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            File file = new File("Crawler/src/main/resources/output/dynasty.json");
+            File file = new File("Gui/src/main/data/dynasty.json");
             DynastyData[] dynastyDataArray = objectMapper.readValue(file, DynastyData[].class);
             List<DynastyData> dynastyDataList = Arrays.asList(dynastyDataArray);
             this.dynastyDataList = FXCollections.observableArrayList(dynastyDataList);

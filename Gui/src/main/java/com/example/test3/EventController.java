@@ -58,7 +58,7 @@ public class EventController implements Initializable {
         // Load data from JSON file
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            File file = new File("Crawler/src/main/resources/output/event.json");
+            File file = new File("Gui/src/main/data/event.json");
             EventData[] eventDataArray = objectMapper.readValue(file, EventData[].class);
             List<EventData> eventDataList = Arrays.asList(eventDataArray);
             this.eventDataList = FXCollections.observableArrayList(eventDataList);
